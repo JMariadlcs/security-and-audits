@@ -1,40 +1,92 @@
 # Hardhat Security
 
+# HOW TO USE SLITHER
+
+**Reminder**: Check your package.json Script part. You be the same that the one in this repo.
+
+-   Install python
+-   Choose version of Solidity:
+
+```bash
+solc-select use 0.8.7
+```
+
+-   Install slither-analyzer:
+
+```bash
+pip3 install slither-analyzer
+```
+
+-   Install solc-select:
+
+```bash
+pip3 install solc-select
+```
+
+-   Check if slither was successfully installed:
+
+```bash
+slither --help
+```
+
+You should see and output.
+
+-   **RUN SLITHER**:
+
+1. Execute yarn to install packages:
+
+```bash
+yarn
+```
+
+2. Execute:
+
+```bash
+yarn slither
+```
+
+You should see output with lines that have issues in different colors depending on importance degree.
+
+-   RED: high important
+-   Green:
+
+# Hardhat Security
+
 This is a section of the Javascript Blockchain/Smart Contract FreeCodeCamp Course. This part of the course is to help users understand basic security and some fundamentals of auditing.
 
 This repo has a few contracts with big flaws, see if you can see them, and see if the tools help you find them!
 
-*[⌨️ (31:28:32) Lesson 18: Security & Auditing ](https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=113312s)*
+_[⌨️ (31:28:32) Lesson 18: Security & Auditing ](https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=113312s)_
 
 [Full Repo](https://github.com/smartcontractkit/full-blockchain-solidity-course-js)
 
-- [Hardhat Security](#hardhat-security)
-- [What is an Audit?](#what-is-an-audit)
-- [Help your auditors!](#help-your-auditors)
-- [Process](#process)
-- [Resources](#resources)
-  - [Tools](#tools)
-  - [Games](#games)
-  - [Blogs](#blogs)
-  - [Audit Examples:](#audit-examples)
-  - [Articles](#articles)
-- [Getting Started](#getting-started)
-  - [Requirements](#requirements)
-  - [Quickstart](#quickstart)
-  - [No Typescript Support](#no-typescript-support)
-    - [Optional Gitpod](#optional-gitpod)
-- [Usage](#usage)
-  - [Slither](#slither)
-  - [Echidna](#echidna)
-- [Linting](#linting)
-- [Formatting](#formatting)
-- [Thank you!](#thank-you)
+-   [Hardhat Security](#hardhat-security)
+-   [What is an Audit?](#what-is-an-audit)
+-   [Help your auditors!](#help-your-auditors)
+-   [Process](#process)
+-   [Resources](#resources)
+    -   [Tools](#tools)
+    -   [Games](#games)
+    -   [Blogs](#blogs)
+    -   [Audit Examples:](#audit-examples)
+    -   [Articles](#articles)
+-   [Getting Started](#getting-started)
+    -   [Requirements](#requirements)
+    -   [Quickstart](#quickstart)
+    -   [No Typescript Support](#no-typescript-support)
+        -   [Optional Gitpod](#optional-gitpod)
+-   [Usage](#usage)
+    -   [Slither](#slither)
+    -   [Echidna](#echidna)
+-   [Linting](#linting)
+-   [Formatting](#formatting)
+-   [Thank you!](#thank-you)
 
 This project is apart of the Hardhat FreeCodeCamp video.
 
 # What is an Audit?
 
-An audit is a security focused code review for looking for issues with your code. 
+An audit is a security focused code review for looking for issues with your code.
 
 # Help your auditors!
 
@@ -69,9 +121,7 @@ An auditors process looks like this:
 
 Typically, you organize reports in a chart that looks like this:
 
-
 ![impact image](images/impact.png)
-
 
 # Resources
 
@@ -113,9 +163,10 @@ PRs welcome to improve the list.
     -   Another blog of one of the best auditors in the space.
 
 ## Audit Examples:
-- [Openzeppelin](https://blog.openzeppelin.com/fei-audit-2/)
-- [Sigma Prime](https://tracer.finance/radar/sigma-prime-audit/)
-- [Trail of Bits](https://alephzero.org/blog/trail-of-bits-audit-security/)
+
+-   [Openzeppelin](https://blog.openzeppelin.com/fei-audit-2/)
+-   [Sigma Prime](https://tracer.finance/radar/sigma-prime-audit/)
+-   [Trail of Bits](https://alephzero.org/blog/trail-of-bits-audit-security/)
 
 ## Articles
 
@@ -154,7 +205,7 @@ Then, go right into [usage](#usage)
 
 ## No Typescript Support
 
-Sorry! Feel free to make a PR if you'd like to see typescript here. 
+Sorry! Feel free to make a PR if you'd like to see typescript here.
 
 ### Optional Gitpod
 
@@ -162,10 +213,9 @@ If you can't or don't want to run and install locally, you can work with this re
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/PatrickAlphaC/hardhat-security-fcc)
 
-
 # Usage
 
-## Slither 
+## Slither
 
 Open the docker shell:
 
@@ -184,7 +234,6 @@ To exit:
 ```
 exit
 ```
-
 
 ## Echidna
 
@@ -236,4 +285,5 @@ ETH/Polygon/Avalanche/etc Address: 0x9680201d9c93d65a3603d2088d125e955c73BD65
 [![Patrick Collins YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCn-3f8tw_E1jZvhuHatROwA)
 [![Patrick Collins Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/patrickalphac/)
 [![Patrick Collins Medium](https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@patrick.collins_58673/)
+
 # security-and-audits
