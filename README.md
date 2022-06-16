@@ -54,7 +54,13 @@ You should see output with lines that have issues in different colors depending 
 
 -   Create Fuzz tests with random data sent to contract functions
 -   Install Docker
--   Use toolbox
+-   Execute:
+
+```bash
+yarn toolbox
+```
+
+-   Run echidna-tests.
 
 # Hardhat Security
 
