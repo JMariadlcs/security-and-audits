@@ -50,6 +50,12 @@ You should see output with lines that have issues in different colors depending 
 -   RED: high important
 -   Green:
 
+# HOW TO USE MANUAL ANALYSIS
+
+-   Create Fuzz tests with random data sent to contract functions
+-   Install Docker
+-   Use toolbox
+
 # Hardhat Security
 
 This is a section of the Javascript Blockchain/Smart Contract FreeCodeCamp Course. This part of the course is to help users understand basic security and some fundamentals of auditing.
